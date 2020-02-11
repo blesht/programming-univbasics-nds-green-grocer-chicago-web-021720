@@ -55,9 +55,19 @@ def apply_coupons(cart, coupons)
     #  than or equal to the nubmer of that item on our coupon 
     # if those things are two we need another if statement 
     # if cart item with coupon exist alrdy, we want to increase count of that 
-    # 
+    # if not, we want to add that cart item with coupon to the cart 
     if cart_item != nil && cart_item[:count] >= coupons[counter][:num]
-      if 
+      if cart_item_with_coupon != nil 
+        cart_item_with_coupon[:count] += coupons[counter][:num]
+        cart_item[:count] -= coupons[counter][:num]
+      else
+        cart_item_with_coupon = {
+          :item => couponed_item_name,
+          :price => coupons[counter][:cost] / coupons[counter][:num]
+        }
+      end 
+      
+      
     
     
     counter += 1 
