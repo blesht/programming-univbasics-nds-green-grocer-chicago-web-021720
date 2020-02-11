@@ -41,9 +41,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+ coupon_check = find_item_by_name_in_collection
 end
 
 
