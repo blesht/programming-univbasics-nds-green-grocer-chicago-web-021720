@@ -29,9 +29,9 @@ def consolidate_cart(cart)
         :count => 1 
       }
       consolidated_cart << item_check
-      row_index += 1 
+      
     end 
-    
+    row_index += 1 
     
 
   end 
