@@ -47,6 +47,8 @@ def apply_coupons(cart, coupons)
   # array of coupons is second arg with hashes inside, each hash has item,num,cost 
   # example array coupon [{item=>avocado,num=>2,cost=>5}] so 2 avos for $5 so each
   # cost 2.50 
+  # new cart should ahve a single avo item with price of $3 and count = 1 
+  # and a new item avocado with coupon with price = $2.50 and count = 2 
  coupon_check = find_item_by_name_in_collection
 end
 
