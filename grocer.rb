@@ -20,7 +20,6 @@ def consolidate_cart(cart)
     consolidated_cart << cart[row_index]
     consolidated_cart[row_index][:count] = 1 
   row_index += 1 
-  puts "** THIS IS THE CONSOLIDATED CART #{consolidated_cart}"
   end 
   
  
