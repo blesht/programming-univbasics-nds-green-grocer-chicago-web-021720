@@ -17,12 +17,8 @@ def consolidate_cart(cart)
   consolidated_cart = [] 
   row_index = 0 
   while row_index < cart.length do 
-  item_checker = cart[row_index][:item]
-  if item_checker in consolidated_cart
-    consolidated_cart[row_index][:count] += 1 
-  else 
     consolidated_cart << cart[row_index]
-  end
+    consolidated_cart[row_index][:count] = 1 
   row_index += 1 
   puts "** THIS IS THE CONSOLIDATED CART #{consolidated_cart}"
   end 
