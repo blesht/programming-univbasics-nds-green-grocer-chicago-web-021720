@@ -43,7 +43,7 @@ end
 def apply_coupons(cart, coupons)
   counter = 0 
   while counter < coupons.length do 
-    cart_item = find_item_by_name_in_collection(coupon[counter][:item], cart)
+    cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
     # passing in the name from the coupon and the cart, This will give us either   
     # item name or nil
     # get item with coupon with new name 
