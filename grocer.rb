@@ -54,6 +54,8 @@ def apply_coupons(cart, coupons)
     # check if cart item exist in the count and if the cart item count is larger 
     #  than or equal to the nubmer of that item on our coupon 
     # if those things are two we need another if statement 
+    # if cart item with coupon exist alrdy, we want to increase count of that 
+    # 
     if cart_item != nil && cart_item[:count] >= coupons[counter][:num]
       if 
     
