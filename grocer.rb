@@ -17,10 +17,21 @@ def consolidate_cart(cart)
   consolidated_cart = [] 
   row_index = 0 
   while row_index < cart.length do 
-    item_check = 
-    consolidated_cart << cart[row_index]
-    consolidated_cart[row_index][:count] = 1 
-  row_index += 1 
+    item_check = find_item_by_name_in_collection(cart[row_index][:item],consolidated_cart) 
+    ## returns item if it finds it and if not it returns nil 
+    if item_check 
+      item_check[:count] += 1 
+    else 
+      item_check = {
+        :item => cart[row_index][:item],
+        :price => cart[row_index][:price],
+        :clearance => cart[row_index][:clearance]
+        :count => 1 
+      }
+      consolidated_cart << item_check
+      row_index += 1 
+    
+
   end 
   
  
