@@ -76,7 +76,7 @@ def apply_coupons(cart, coupons)
     
     
     counter += 1 
-    cart 
+    
   end
   
   
@@ -92,7 +92,7 @@ def apply_coupons(cart, coupons)
   # cost 2.50 
   # new cart should ahve a single avo item with price of $3 and count = 1 
   # and a new item avocado with coupon with price = $2.50 and count = 2 
- 
+ cart 
 end
 
 
