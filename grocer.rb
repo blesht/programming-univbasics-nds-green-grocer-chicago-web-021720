@@ -41,6 +41,9 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  
+  # passing in an array of items from our consolidated cart, with item,price,clearence,count 
+  
  coupon_check = find_item_by_name_in_collection
 end
 
