@@ -23,8 +23,8 @@ def consolidate_cart(cart)
   else 
     consolidated_cart << cart[row_index]
   end
-  row_index += log10
-  
+  row_index += 1 
+  puts "** THIS IS THE CONSOLIDATED CART #{consolidated_cart}"
   end 
   
  
