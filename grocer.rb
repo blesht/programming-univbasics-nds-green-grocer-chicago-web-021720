@@ -42,8 +42,11 @@ end
 
 def apply_coupons(cart, coupons)
   
-  # passing in an array of hash items from our consolidated cart, with item,price,clearence,count 
+  # passing in an array of hash items from our consolidated cart, with item,price
+  # ,clearence,count 
   # array of coupons is second arg with hashes inside, each hash has item,num,cost 
+  # example array coupon [{item=>avocado,num=>2,cost=>5}] so 2 avos for $5 so each
+  # cost 2.50 
  coupon_check = find_item_by_name_in_collection
 end
 
