@@ -22,6 +22,8 @@ def consolidate_cart(cart)
     consolidated_cart[row_index][:count] += 1 
   else 
     consolidated_cart << cart[row_index]
+  end
+  row_index += log10
   
   end 
   
