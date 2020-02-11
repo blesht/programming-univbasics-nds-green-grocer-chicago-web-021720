@@ -30,6 +30,8 @@ def consolidate_cart(cart)
       }
       consolidated_cart << item_check
       row_index += 1 
+    end 
+    
     
 
   end 
