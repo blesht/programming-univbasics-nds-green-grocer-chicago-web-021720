@@ -14,10 +14,15 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
+  consolidated_cart = [] 
+  row_index = 0 
+  while row_index < cart.length do 
+  item_checker = cart[row_index][:item]
+  if 
   
+  end 
   
-  pp cart 
-  puts " THIS IS THE CART ***** #{cart}"
+ 
   
   # Consult README for inputs and outputs
   #
