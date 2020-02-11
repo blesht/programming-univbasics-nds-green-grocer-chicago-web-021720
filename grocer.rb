@@ -17,6 +17,7 @@ def consolidate_cart(cart)
   consolidated_cart = [] 
   row_index = 0 
   while row_index < cart.length do 
+    
     consolidated_cart << cart[row_index]
     consolidated_cart[row_index][:count] = 1 
   row_index += 1 
