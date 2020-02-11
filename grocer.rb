@@ -47,7 +47,7 @@ def apply_coupons(cart, coupons)
     # passing in the name from the coupon and the cart, This will give us either   
     # item name or nil
     # get item with coupon with new name 
-    couponed_item_name = "#{coupons[counter][:item]} /COUPON"
+    couponed_item_name = "#{coupons[counter][:item]} W/COUPON"
      # set up to check if the coupon item already exist in the cart 
     cart_item_with_coupon = find_item_by_name_in_collection(couponed_item_name, cart) 
     # this will either be an item name with coupon or nil. 
