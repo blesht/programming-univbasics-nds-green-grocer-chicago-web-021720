@@ -41,6 +41,22 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
+  counter = 0 
+  while counter < coupons.length do 
+    
+    
+    
+    
+    
+    
+    counter += 1 
+  end
+  
+  
+  
+  
+  
+  
   
   # passing in an array of hash items from our consolidated cart, with item,price
   # ,clearence,count 
@@ -49,7 +65,7 @@ def apply_coupons(cart, coupons)
   # cost 2.50 
   # new cart should ahve a single avo item with price of $3 and count = 1 
   # and a new item avocado with coupon with price = $2.50 and count = 2 
- coupon_check = find_item_by_name_in_collection
+ 
 end
 
 
