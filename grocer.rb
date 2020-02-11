@@ -51,7 +51,7 @@ def apply_coupons(cart, coupons)
      # set up to check if the coupon item already exist in the cart 
     cart_item_with_coupon = find_item_by_name_in_collection(couponed_item_name, cart) 
     # this will either be an item name with coupon or nil. 
-    # check if cart item exist and if there is enough of that item in cart for   
+    # check if cart item exist in the count and if the cart there is enough of that item in cart for   
     # coupon to apply
     if cart_item != nil && cart_item[:count] >= coupons[counter][:num]
     
